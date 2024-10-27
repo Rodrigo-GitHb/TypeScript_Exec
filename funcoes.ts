@@ -1,10 +1,16 @@
-function multiplica(valor1: number, valor2: number){
-    return console.log(valor1 * valor2);
+function multiplica(valor1: number, valor2: number): number{
+    const valores = valor1 * valor2
+
+    return valores;
 }
 
-function saudacoes(nome: string){
-    return console.log(`Olá ${nome}`);
+const resultado = multiplica(20, 20)
+console.log(resultado)
+
+function saudacoes(nome: string): string{
+    return `Olá ${nome}`;
 }
 
-multiplica(20, 20)
-saudacoes("Rodrigo")
+const usuario = "Rodrigo"
+const saudacoesNome = saudacoes(usuario);
+console.log(saudacoesNome)

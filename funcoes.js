@@ -1,9 +1,13 @@
 "use strict";
 function multiplica(valor1, valor2) {
-    return console.log(valor1 * valor2);
+    const valores = valor1 * valor2;
+    return valores;
 }
+const resultado = multiplica(20, 20);
+console.log(resultado);
 function saudacoes(nome) {
-    return console.log(`Olá ${nome}`);
+    return `Olá ${nome}`;
 }
-multiplica(20, 20);
-saudacoes("Rodrigo");
+const usuario = "Rodrigo";
+const saudacoesNome = saudacoes(usuario);
+console.log(saudacoesNome);
